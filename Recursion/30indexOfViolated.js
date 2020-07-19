@@ -1,3 +1,7 @@
+/**
+ * iterative function which returns index where sorting order is violated
+ * @param {array} array - the array you want to check
+ */
 function indxeOfViolated(array) {
   function iter(restArray) {
     let [first, ...rest] = restArray;

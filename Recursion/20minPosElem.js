@@ -1,3 +1,7 @@
+/**
+ * iterative function which returns minimum positive element in the array
+ * @param {array} array - the array you want to check
+ */
 function minPosElem(array) {
   function iter(array, res = Infinity) {
     let [first, ...rest] = array;

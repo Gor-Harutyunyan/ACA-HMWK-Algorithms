@@ -1,3 +1,7 @@
+/**
+ * checks if all the digits of a number are odd
+ * @param {number} num - the number we want to check
+ */
 function isAllDigitsOdd(num) {
   if (num < 10) {
     return num % 2 !== 0;

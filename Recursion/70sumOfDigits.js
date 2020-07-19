@@ -1,3 +1,7 @@
+/**
+ * recursive function which calculates the sum of numbers digits until the sum is one digit number
+ * @param {number} num - the number you want to sum digits
+ */
 function sumOfDigits(num) {
   function iter(num, sum = 0) {
     let lastDigit = num % 10;

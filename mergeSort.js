@@ -1,3 +1,8 @@
+/**
+ * called by mergesort function compares the elements and returns sorted array
+ * @param {array} leftArr
+ * @param {array} rightArr
+ */
 function mergeParts(leftArr, rightArr) {
   let sorted = [];
   while (leftArr.length && rightArr.length) {
@@ -15,6 +20,13 @@ function mergeParts(leftArr, rightArr) {
   }
   return sorted;
 }
+
+/**
+ * sorts an array using mergeSort algorithm
+ * divide array in two pieces untill it has only one element
+ * calls another function to compare the elements and return sorted array
+ * @param {array} arr - the array you want to sort
+ */
 function mergesort(arr) {
   if (arr.length < 2) {
     return arr;

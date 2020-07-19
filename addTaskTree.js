@@ -12,6 +12,11 @@ const tree = {
   },
 };
 
+/**
+ * recursive function returns array of values of nested objects
+ * @param {obj} tree
+ * @param {array} res
+ */
 const fn = (tree, res = []) => {
   if (tree === null || tree === undefined) {
     return res;

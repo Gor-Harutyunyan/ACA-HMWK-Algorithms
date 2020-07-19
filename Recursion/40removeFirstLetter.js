@@ -1,3 +1,7 @@
+/**
+ * iterative function which removes the first element of an array and returns the given array
+ * @param {array} array - the array you want to remove the first letter
+ */
 function removeFirstLetter(array) {
   if (array.length === 0) {
     return array;

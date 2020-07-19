@@ -1,3 +1,7 @@
+/**
+ * iterative function flattens given array
+ * @param {array} array - the array you want to flat
+ */
 function arrFlat(array) {
   return array.reduce((res, item) => {
     if (Array.isArray(item)) {
