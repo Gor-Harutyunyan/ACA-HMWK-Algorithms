@@ -4,10 +4,11 @@
  * @param {number} num - how many places to left you wnat ot rotate
  */
 function arrRotate(arr, num) {
-  if (Number.isNaN(Number(num)) || num === undefined) {
+  let counter = 0;
+  if (Number.isNaN(Number(num)) || num === undefined || num > arr.length) {
     return arr;
   }
-  function iter(restArr, counter = 0) {
+  function iter(restArr) {
     if (counter === arr.length - num) {
       return restArr;
     }
@@ -15,7 +16,7 @@ function arrRotate(arr, num) {
     restArr.unshift(last);
     restArr.pop();
     counter++;
-    return iter(restArr, counter);
+    return iter(restArr);
   }
   return iter(arr);
 }
